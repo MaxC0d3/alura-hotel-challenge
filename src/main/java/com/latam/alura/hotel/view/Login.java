@@ -248,8 +248,12 @@ public class Login extends JFrame {
             menu.setVisible(true);
             dispose();
         }else {
-            JOptionPane.showMessageDialog(this, "Usuario o Contraseña no válidos");
+            JOptionPane.showMessageDialog(this, "Usuario o contraseña no válidos");
         }
+
+		    MenuUsuario menu = new MenuUsuario();
+		    menu.setVisible(true);
+		    dispose();
     }
     private void headerMousePressed(java.awt.event.MouseEvent evt) {
         xMouse = evt.getX();
